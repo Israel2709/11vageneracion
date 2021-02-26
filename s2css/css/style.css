@@ -1,0 +1,124 @@
+h1{
+    color:peru;
+}
+
+h1{
+   color:slategray 
+}
+
+
+
+#main-heading{
+    font-style: normal;
+}
+
+.text-oblique{
+    font-style: oblique;
+}
+
+.text-italic{
+    font-style:italic;
+}
+
+li{
+    text-decoration: underline;
+}
+
+/*selector por anidación*/
+/* selecciona TODOS los li que se encuentren DENTRO de un elemento con el id "lista-1"*/
+
+#lista-1 li{
+  background-color:#acacac;  
+}
+
+#lista-1 li ul li{
+    background-color:springgreen
+}
+
+.lista-tipo-1{
+    .....
+}
+
+.lista-tipo-1 p{
+    .....
+}
+
+.lista-tipo-1 p span{
+    .....
+}
+
+ul#lista-1
+
+.bg-red{
+    background: red;
+}
+
+
+/*selector de conjunción*/
+p.bg-red{
+
+}
+
+
+.lista-tipo-1 li{
+  background:gray
+}
+
+/*selector de descendiente directo*/
+.lista-tipo-1 > li{
+    background:peru
+}
+
+.lista-tipo-2 li.active{
+    background:skyblue;
+    padding:1rem;
+    text-decoration:underline
+}
+
+/* selector de sucesores*/
+.lista-tipo-2 li.active ~ li{
+    background-color:lightcoral
+}
+
+/* selector de sucesor adyacente*/
+.lista-tipo-2 li.active + li{
+    background-color:purple
+}
+
+.lista-tipo-3 li + li{
+    background:lime;
+}
+
+
+.lista-tipo-3 li:nth-of-type(odd){
+    font-size:25px;
+}
+
+.lista-tipo-3 li:nth-of-type(even){
+    font-size:8px;
+}
+
+.lista-tipo-3 li:nth-of-type(4n){
+    background-color:magenta
+}
+
+.lista-tipo-3 li:nth-of-type(3n + 2){
+    background-color:cyan
+}
+
+.lista-tipo-3 li:first-of-type{
+    border:1px solid red;
+}
+
+.lista-tipo-3 li:last-of-type{
+    border:1px solid blue
+}
+
+.lista-tipo-3 li:not(:first-of-type){
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.lista-tipo-3 li:not(:last-of-type){
+    font-family: 'Courier New', Courier, monospace;
+}
+
