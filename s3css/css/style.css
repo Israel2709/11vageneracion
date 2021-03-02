@@ -1,0 +1,29 @@
+.square{
+    height:100px;
+    /*width:100px;*/
+}
+
+.w-100{
+    width:100%
+}
+
+.text-white{
+    color:white
+}
+
+.bg-red{
+    background-color:darkred;
+}
+
+.bg-blue{
+    background-color:lightblue
+}
+
+.p-3{
+    padding:1.5rem;
+}
+
+.full-height{
+    height:100vh;
+}
+
