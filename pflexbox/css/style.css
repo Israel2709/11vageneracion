@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 .square-wrapper{
@@ -12,6 +14,7 @@
 
 .square{
     width:50px;
+    height:50px;
 }
 
 /*--utilities for background-color--*/
@@ -134,7 +137,33 @@
 }
 
 .layout-wrapper{
-    width:100vw;
-    height:100vh;
+    width:95vw;
+    height:50vh;
     border: 2px solid #333;
+    margin-bottom:1rem;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.auxiliar-wrapper{
+    padding:10px;
+    border:1px solid slategray;
+    background-color:skyblue
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.w-100{
+    width:100%;
+}
+
+.mx-1{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+.item{
+    width:50px;
 }
