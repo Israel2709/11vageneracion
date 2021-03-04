@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -121,4 +122,10 @@ body {
     background-image: none;
   }
 }
+
+/*
+- a partir de 768px, sólo se vean la 1a y la 3er card
+- en desktop, el body debe tener fondo blanco
+- para tablet, las cards deberían aparecer de forma horizontal dentro del contenedor
+- en desktop, se debe de invertir el orden de las cards*/
 /*# sourceMappingURL=style.css.map */
