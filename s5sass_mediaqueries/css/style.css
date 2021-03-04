@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #b3b5c6;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #acacac;
+  -webkit-box-shadow: 3px 3px 5px #ccc;
+          box-shadow: 3px 3px 5px #ccc;
+}
+
+.card .name, .card .price {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #494c5f;
+}
+
+.card .price {
+  font-size: 3rem;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .price span {
+  font-size: 1.5rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.card ul li {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #6d708d;
+}
+
+.card ul li:first-of-type {
+  border-top: 1px solid #6d708d;
+}
+
+.card .btn {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(45deg, #a3a8f0, #696fdd);
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+  color: white;
+  text-transform: uppercase;
+}
+
+.card .btn:hover {
+  background-image: linear-gradient(315deg, #a3a8f0, #696fdd);
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

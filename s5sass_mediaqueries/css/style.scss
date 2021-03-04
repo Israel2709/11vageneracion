@@ -1,0 +1,72 @@
+$base-measure: 1rem;
+$custom-gradient: linear-gradient( 45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%) );
+$custom-gradient-inverted: linear-gradient( 315deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%) );
+$very-light-blue: hsl(240, 78%, 98%);
+$light-blue: hsl(234, 14%, 74%);
+$grayish-blue: hsl(233, 13%, 49%);
+$dark-grayish-blue: hsl(232, 13%, 33%);
+
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color:$light-blue;
+}
+
+.card{
+    background:white;
+    border-radius:$base-measure;
+    padding:$base-measure * 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid #acacac;
+    box-shadow:3px 3px 5px #ccc;
+    .name,.price{
+        font-weight:bold;
+        margin-bottom:1rem;
+        color:$dark-grayish-blue
+    }
+    .price{
+        font-size:$base-measure *3;
+        font-weight:bolder;
+        display: flex;
+        align-items: center;
+        span{
+            font-size:$base-measure * 1.5;
+        }
+    }
+    ul{
+        list-style:none;
+        padding:0;
+        width:100%;
+        margin-bottom:$base-measure * 1.5;
+        li{
+            padding:$base-measure;
+            text-align:center;
+            border-bottom:1px solid $grayish-blue;
+            &:first-of-type{
+                border-top:1px solid $grayish-blue
+            }
+        }
+    }
+    .btn{
+        padding:1rem;
+        width: 100%;
+        border:none;
+        border-radius:$base-measure * .5;
+        background-image:$custom-gradient;
+        transition:background-color 1s ease;
+        color: white;
+        text-transform: uppercase;
+        &:hover{
+            background-image: $custom-gradient-inverted; 
+            cursor:pointer;
+        }
+    }
+}

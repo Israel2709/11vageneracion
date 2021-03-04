@@ -158,6 +158,9 @@
 .w-100{
     width:100%;
 }
+.w-25{
+    width:25%;
+}
 
 .mx-1{
     margin-left:1rem;
@@ -166,4 +169,20 @@
 
 .item{
     width:50px;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-row-reverse{
+    flex-direction:row-reverse
+}
+/*
+#inverted .auxiliar-wrapper:nth-of-type(even){
+    flex-direction:row-reverse
+}*/
+
+#inverted .auxiliar-wrapper:nth-of-type( even ){
+    flex-direction:row-reverse
 }
