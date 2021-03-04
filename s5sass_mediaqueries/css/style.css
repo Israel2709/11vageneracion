@@ -10,6 +10,13 @@ body {
   background-color: #b3b5c6;
 }
 
+.card-wrapper {
+  width: calc( 100% - 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+}
+
 .card {
   background: white;
   border-radius: 1rem;
@@ -27,12 +34,17 @@ body {
   border: 1px solid #acacac;
   -webkit-box-shadow: 3px 3px 5px #ccc;
           box-shadow: 3px 3px 5px #ccc;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: #494c5f;
+  margin-bottom: 1rem;
 }
 
 .card .name, .card .price {
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #494c5f;
 }
 
 .card .price {
@@ -82,5 +94,31 @@ body {
 .card .btn:hover {
   background-image: linear-gradient(315deg, #a3a8f0, #696fdd);
   cursor: pointer;
+}
+
+.card:hover {
+  color: white;
+  background-image: linear-gradient(45deg, #a3a8f0, #696fdd);
+}
+
+.card:hover .btn {
+  background-image: none;
+  color: #6d708d;
+}
+
+@media only screen and (min-width: 992px) {
+  .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 992px;
+  }
+  .card .btn {
+    background-color: peru;
+    background-image: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

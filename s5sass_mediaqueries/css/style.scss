@@ -18,6 +18,12 @@ body{
     background-color:$light-blue;
 }
 
+.card-wrapper{
+    width:calc( 100% - #{ $base-measure * 2} );
+    margin-left:auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
 .card{
     background:white;
     border-radius:$base-measure;
@@ -27,10 +33,14 @@ body{
     align-items: center;
     border:1px solid #acacac;
     box-shadow:3px 3px 5px #ccc;
+    transform:scale(1);
+    transition:all 1s ease;
+    color:$dark-grayish-blue;
+    margin-bottom:$base-measure;
     .name,.price{
         font-weight:bold;
         margin-bottom:1rem;
-        color:$dark-grayish-blue
+        
     }
     .price{
         font-size:$base-measure *3;
@@ -67,6 +77,32 @@ body{
         &:hover{
             background-image: $custom-gradient-inverted; 
             cursor:pointer;
+        }
+    }
+    &:hover{
+        color:white;
+        background-image: $custom-gradient;
+        //transform:scale(1.1);
+        .btn{
+            background-image: none;
+            color:$grayish-blue
+        }
+    }
+}
+
+//Versión escritorio 
+
+@media only screen and ( min-width: 992px ){
+
+    .card-wrapper{
+        display: flex;
+        justify-content: center;
+        width:992px;
+    }
+    .card{
+        .btn{
+            background-color:peru;
+            background-image: none;
         }
     }
 }
