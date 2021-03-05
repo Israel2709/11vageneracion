@@ -1,0 +1,58 @@
+.hamb-button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 1px solid #333;
+    border-radius: 5px;
+    &:hover {
+        cursor: pointer;
+    }
+    &:before {
+        content: "";
+        width: 60%;
+        display: block;
+        height: 2px;
+        background-color: #333;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14px;
+        box-shadow: 0px 10px 0 0 #333, 0px 20px 0 0 #333;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+    &:checked + ul {
+        display: none;
+    }
+}
+
+.card-wrapper {
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+    justify-content: space-evenly;
+    .card {
+        border: 1px solid #acacac;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        .img-wrapper {
+            width: 100%;
+            padding-top:100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .card-body {
+            padding: 1rem;
+        }
+    }
+}
+
+
+//rc="https://picsum.photos/id/45/600/400" alt=""
+//https://picsum.photos/id/60/500/200
