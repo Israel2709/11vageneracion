@@ -1,0 +1,30 @@
+.bg-cyan {
+  background-color: cyan;
+}
+
+.bg-navy {
+  background-color: navy;
+}
+
+.bg-golden {
+  background-color: goldenrod;
+}
+
+.bg-magenta {
+  background-color: magenta;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+
+.justify-content-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=sytle.css.map */

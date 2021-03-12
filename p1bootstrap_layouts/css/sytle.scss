@@ -1,0 +1,24 @@
+.bg-{
+    &cyan{
+        background-color:cyan;
+    }
+    &navy{
+        background-color:navy;
+    }
+    &golden{
+        background-color: goldenrod;
+    }
+    &magenta{
+        background-color: magenta;
+    }
+    &yellow{
+        background-color: yellow;
+    }
+    &purple{
+        background-color: purple;
+    }
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
