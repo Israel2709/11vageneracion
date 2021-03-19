@@ -1,0 +1,188 @@
+@-webkit-keyframes ball-movement {
+  0% {
+    left: calc(1rem + 5px);
+    top: calc( 50% - 12.5px);
+  }
+  25% {
+    left: calc( 50% - 12.5px);
+    top: 0;
+  }
+  50% {
+    left: calc( 100% - 30px - 1rem);
+    top: calc( 50% - 12.5px);
+  }
+  75% {
+    left: calc( 50% - 12.5px);
+    top: calc( 100% - 25px);
+  }
+  100% {
+    left: calc(1rem + 5px);
+    top: calc( 50% - 12.5px);
+  }
+}
+
+@keyframes ball-movement {
+  0% {
+    left: calc(1rem + 5px);
+    top: calc( 50% - 12.5px);
+  }
+  25% {
+    left: calc( 50% - 12.5px);
+    top: 0;
+  }
+  50% {
+    left: calc( 100% - 30px - 1rem);
+    top: calc( 50% - 12.5px);
+  }
+  75% {
+    left: calc( 50% - 12.5px);
+    top: calc( 100% - 25px);
+  }
+  100% {
+    left: calc(1rem + 5px);
+    top: calc( 50% - 12.5px);
+  }
+}
+
+@-webkit-keyframes bar-1-movement {
+  0% {
+    top: calc(50% - 25px);
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: calc( 50% - 12.5px);
+  }
+  75% {
+    top: calc( 100% - 50px);
+  }
+  100% {
+    top: calc( 50% - 25px);
+  }
+}
+
+@keyframes bar-1-movement {
+  0% {
+    top: calc(50% - 25px);
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: calc( 50% - 12.5px);
+  }
+  75% {
+    top: calc( 100% - 50px);
+  }
+  100% {
+    top: calc( 50% - 25px);
+  }
+}
+
+@-webkit-keyframes bar-2-movement {
+  0% {
+    top: calc( 50% - 12.5px);
+  }
+  25% {
+    top: calc( 100% - 50px);
+  }
+  50% {
+    top: calc( 50% - 12.5px);
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    top: calc( 50% - 12.5px);
+  }
+}
+
+@keyframes bar-2-movement {
+  0% {
+    top: calc( 50% - 12.5px);
+  }
+  25% {
+    top: calc( 100% - 50px);
+  }
+  50% {
+    top: calc( 50% - 12.5px);
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    top: calc( 50% - 12.5px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.playing-area {
+  width: 800px;
+  height: 400px;
+  border: 5px solid green;
+  background-color: rgba(0, 255, 0, 0.1);
+  background-image: url("https://images.unsplash.com/photo-1567459169668-95d355371bda?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Z3Jhc3N8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.playing-area .bar {
+  width: 5px;
+  height: 50px;
+  position: absolute;
+}
+
+.playing-area .bar.bar-1 {
+  background-color: red;
+  top: calc(50% - 25px);
+  -webkit-animation: bar-1-movement 5s linear infinite;
+          animation: bar-1-movement 5s linear infinite;
+}
+
+.playing-area .bar.bar-2 {
+  background-color: blue;
+  top: 1rem;
+  right: 1rem;
+  -webkit-animation: bar-2-movement 5s linear infinite;
+          animation: bar-2-movement 5s linear infinite;
+}
+
+.playing-area .ball {
+  width: 25px;
+  height: 25px;
+  background-color: cyan;
+  border-radius: 50%;
+  position: absolute;
+  left: 22px;
+  top: calc( 50% - 12.5px);
+  -webkit-animation-name: ball-movement;
+          animation-name: ball-movement;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/*# sourceMappingURL=style.css.map */

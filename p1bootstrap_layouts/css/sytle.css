@@ -1,3 +1,46 @@
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.card h1 {
+  font-size: 1rem;
+  color: #777;
+}
+
+.card-blue {
+  border: 1px solid #acacac;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: blue;
+  width: 10%;
+}
+
+.card-red {
+  border: 1px solid #acacac;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: red;
+  width: 30%;
+}
+
+.card-blue
+.some-card {
+  width: 20%;
+  height: 200px;
+  border-top: 2px solid peru;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.some-other-card {
+  border-top: 10px solid navy;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .bg-cyan {
   background-color: cyan;
 }

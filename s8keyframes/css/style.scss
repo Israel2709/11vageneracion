@@ -1,0 +1,69 @@
+@keyframes growing-line{
+    from{
+        width:15vw;
+        border:3px solid peru;
+    }
+
+    to{
+        width:calc(100vw - 2rem);
+        border:3px solid purple;
+    }
+}
+
+
+@keyframes toggling-line{
+    0%{
+        width:15vw;
+        border:3px solid peru;
+    }
+
+    50%{
+        width:calc(100vw - 2rem);
+        border:3px solid purple;
+    }
+
+    100%{
+        width:50vw;
+        border:3px solid peru;
+    }
+}
+
+@keyframes toggling-line-2{
+    0%{
+        width:15vw;
+        border:3px solid rgb(188, 63, 205);
+    }
+
+    50%{
+        width:calc(80vw - 2rem);
+        border:3px solid rgb(128, 4, 0);
+    }
+
+    100%{
+        width:50vw;
+        border:3px solid peru;
+    }
+}
+
+
+body{
+    padding:1rem
+}
+
+.simple-line{
+    border:3px solid peru;
+    width:15vw;
+    animation-name: toggling-line;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.simple-line-2{
+    border:3px solid peru;
+    width:15vw;
+    animation-name: toggling-line-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

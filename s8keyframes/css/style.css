@@ -1,0 +1,112 @@
+@-webkit-keyframes growing-line {
+  from {
+    width: 15vw;
+    border: 3px solid peru;
+  }
+  to {
+    width: calc(100vw - 2rem);
+    border: 3px solid purple;
+  }
+}
+
+@keyframes growing-line {
+  from {
+    width: 15vw;
+    border: 3px solid peru;
+  }
+  to {
+    width: calc(100vw - 2rem);
+    border: 3px solid purple;
+  }
+}
+
+@-webkit-keyframes toggling-line {
+  0% {
+    width: 15vw;
+    border: 3px solid peru;
+  }
+  50% {
+    width: calc(100vw - 2rem);
+    border: 3px solid purple;
+  }
+  100% {
+    width: 50vw;
+    border: 3px solid peru;
+  }
+}
+
+@keyframes toggling-line {
+  0% {
+    width: 15vw;
+    border: 3px solid peru;
+  }
+  50% {
+    width: calc(100vw - 2rem);
+    border: 3px solid purple;
+  }
+  100% {
+    width: 50vw;
+    border: 3px solid peru;
+  }
+}
+
+@-webkit-keyframes toggling-line-2 {
+  0% {
+    width: 15vw;
+    border: 3px solid #bc3fcd;
+  }
+  50% {
+    width: calc(80vw - 2rem);
+    border: 3px solid #800400;
+  }
+  100% {
+    width: 50vw;
+    border: 3px solid peru;
+  }
+}
+
+@keyframes toggling-line-2 {
+  0% {
+    width: 15vw;
+    border: 3px solid #bc3fcd;
+  }
+  50% {
+    width: calc(80vw - 2rem);
+    border: 3px solid #800400;
+  }
+  100% {
+    width: 50vw;
+    border: 3px solid peru;
+  }
+}
+
+body {
+  padding: 1rem;
+}
+
+.simple-line {
+  border: 3px solid peru;
+  width: 15vw;
+  -webkit-animation-name: toggling-line;
+          animation-name: toggling-line;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.simple-line-2 {
+  border: 3px solid peru;
+  width: 15vw;
+  -webkit-animation-name: toggling-line-2;
+          animation-name: toggling-line-2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+/*# sourceMappingURL=style.css.map */
