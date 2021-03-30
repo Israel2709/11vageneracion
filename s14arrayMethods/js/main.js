@@ -150,9 +150,9 @@ const createLabelsArray = () => {
 createLabelsArray()
 
 const getBestMentors = () => {
-    let result = mentorsArray.filter( mentor => {
-        return getMentorAverage( mentor.name ) > 9
-    })
+    let result = mentorsArray.filter( mentor =>
+        getMentorAverage( mentor.name ) > 9
+    )
     console.log( result )
 }
 
