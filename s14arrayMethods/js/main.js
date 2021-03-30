@@ -94,25 +94,75 @@ var mentorsArray = [
     }
 ]
 
-mentorsArray.forEach( mentor => {
-    console.log( mentor ) /* => Object*/
-    console.log( mentor.name )  /* => String */
-})
+/*Función para obtener el promedio de una materia específica ( materia )*/
+const getAverage = (materia) => {
 
-let someArray = [
-    [
-        "amadeo",
-        "jaime"
-    ],
-    [
-        "oscar",
-        "deleyja"
-    ],
-    [
-        "shalem",
-        "solis"
-    ]
-]
+    let totalMateria = mentorsArray.reduce( ( accum, current ) => {
+        /*Extraemos de cada mentor el objeto cuya propiedad "signature" coincide con nuestro parámetro "materia"*/
+
+        let puntuacionMateria = current.scores.find( score => score.signature === materia ).score /*Extraemos la propiedad score del objeto encontrado*/
+
+        return accum +  puntuacionMateria /*Acumulamos el valor de score*/
+    },0)
+    /*obtenemos el promedio*/
+    let average = totalMateria / mentorsArray.length
+    /*devolvemos el promedio*/
+    return average
+}
+
+
+let htmlAverage = getAverage( "HTML" )
+console.log( "htmlAverage: ", htmlAverage  )
+
+let cssAverage = getAverage( "CSS" )
+console.log( "cssAverage: ", cssAverage  )
+
+let jsAverage = getAverage( "JS" )
+console.log( "jsAverage: ", jsAverage  )
+
+let reactAverage = getAverage( "ReactJS" )
+console.log( "reactAverage: ", reactAverage  )
+
+const getMentorAverage = (mentorName) => {
+    let mentorScores = mentorsArray.find( (mentor) => {
+        return mentor.name === mentorName
+    }).scores
+    let mentorAverage = mentorScores.reduce( ( accum, current ) => {
+        return accum + current.score
+    },0 ) / mentorScores.length
+
+    console.log( "mentorAverage: ", mentorAverage)
+
+    return mentorAverage
+}
+
+getMentorAverage("Israel Salinas Martinez")
+getMentorAverage("David Cermeño Moranchel")
+
+
+const createLabelsArray = () => {
+    let labelsArray = mentorsArray.map( mentor => {
+        return `Hola, soy ${mentor.name} y mi promedio es de ${ getMentorAverage(mentor.name) }`
+    })
+    console.log( labelsArray )
+}
+
+createLabelsArray()
+
+const getBestMentors = () => {
+    let result = mentorsArray.filter( mentor => {
+        return getMentorAverage( mentor.name ) > 9
+    })
+    console.log( result )
+}
+
+getBestMentors() 
+
+
+
+
+
+/*
 
 someArray.forEach( (item,index) => {
     console.log(`el item número ${index} es: ${item}`)
@@ -122,17 +172,12 @@ someArray.forEach( (item,index) => {
     } )
 })
 
+
 let fruits = [
     "mango",
     "uva",
     "pera"
 ]
-
-/*
-    ["0 mango"],
-    ["1 uva"],
-    ["2 pera"]
-    */
 
 let result = fruits.map( (fruit, index ) => `${index} ${fruit}`)
 
@@ -149,3 +194,5 @@ console.log( filtered )
 let filteredR = fruits.reduce( (accum, current, index) => current.charAt(0) === "p" ? [...accum, current] : accum, [])
 
 console.log( filteredR)
+
+*/
