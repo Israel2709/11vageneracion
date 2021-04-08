@@ -72,3 +72,41 @@ const deleteMentor = mentorKey => {
 
     xhttp.send( );
 }
+
+let mentor2 = {
+    name:"Fernanda Palacios Vera",
+    phone:"555555555",
+    age:20
+}
+
+let lettersArray = [
+    "a",
+    "b",
+    "c"
+]
+
+const printMentor = () => {
+    let mentorName = document.createTextNode( mentor2.name )
+    let mentorPhone = document.createTextNode( mentor2.phone )
+    let mentorAge = document.createTextNode( mentor2.age )
+
+    /*destructuring*/
+
+    let { name, phone, age } = mentor2
+    /*
+        let name = mentor2.name
+        let phone = mentor2.phone
+        let age = mentor2.age
+    */
+
+    let mentorName = mentor.name
+
+    let [ one, two, three ] = lettersArray
+    /*
+        let one = lettersArray[0]
+        let two = lettersArray[1]
+        let three = lettersArray[2]
+
+    */
+    
+}
