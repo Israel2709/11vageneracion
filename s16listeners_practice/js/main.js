@@ -99,7 +99,10 @@ const deleteMentor = event => {
     printTable()
 }
 
+
+
 const printTable = () => {
+    let globalAverage = 0;
     let table = document.getElementById("mentor-table")
     
     while (table.lastElementChild) {
@@ -155,6 +158,12 @@ const printTable = () => {
         buttons.forEach( button => {
             button.addEventListener( "click", deleteMentor ) 
         })
+
+        let mentorAverage = mentor.scores.reduce( ( accum, current ) => accum + current.score, 0 )/ mentor.scores.length
+
+        globalAverage += mentorAverage / mentorsArray.length
+
+        console.log( globalAverage )
     })
 }
 
