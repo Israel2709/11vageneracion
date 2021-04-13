@@ -55,3 +55,26 @@ $('#btn-success').click( () => {
 
 */
 
+$("form").click( () => {
+    console.log("click al form")
+})
+let shouldWork = true 
+$("button").click( event => {
+    event.preventDefault()
+    event.stopPropagation()
+    if( shouldWork ) {
+        console.log( "click al botón")
+    } else {
+        return false 
+    }
+    console.log(" después del ternario ")
+})
+
+/*agregamos el listener de click a todos los inputs del tipo radio dentro e controls wrapper*/
+$(".controls-wrapper input[type='radio']").click( () => {
+    /*determinamos cuál fue la forma seleccionada*/
+    let selection = $(".controls-wrapper input[type='radio']:checked").val()
+    console.log( selection )
+    /*a nuestro elemento mutable le agregamos una clase con el mismo nombre que la selección*/
+    $("#mutable-shape").removeClass().addClass(selection)
+})
