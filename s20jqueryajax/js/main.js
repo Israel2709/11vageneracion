@@ -26,17 +26,26 @@ $.ajax({
     })
 */
 const getData = () => {
+    let dbData
     $.ajax({
         method: "GET",
         url: "https://ajaxclass-1ca34.firebaseio.com/11g/israel/.json",
         success: response => {
             console.log(response)
+            dbData = response 
         },
         error: error => {
             console.log(error)
-        }
+        },
+        async:false
     })
+
+    console.log( dbData )
+    return dbData
 }
+
+let otherData = getData()
+console.log( otherData )
 
 getData()
 
