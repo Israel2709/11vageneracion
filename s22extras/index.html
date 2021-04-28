@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form id="preview-form" action="" class="bg-dark text-white p-3 border rounded">
+                    <div class="form-group">
+                        <label for="">Cover Image</label>
+                        <input type="text" class="form-control" name="cover">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" class="form-control" name="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Content</label>
+                        <textarea class="form-control" name="content" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-6">
+                <div id="preview-card" class="card">
+                    <img src="..." class="card-img-top cover" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title title">Card title</h5>
+                      <p class="card-text content">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div id="car-wrapper" class="row">
+
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBJwgwrZSjPeKoCJ5Vy0TfaEozd4vLebkQ",
+        authDomain: "fir-test-eaab0.firebaseapp.com",
+        projectId: "fir-test-eaab0",
+        storageBucket: "fir-test-eaab0.appspot.com",
+        messagingSenderId: "744236877983",
+        appId: "1:744236877983:web:ac807af7cd6f6e70b87aaa"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
