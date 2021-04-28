@@ -49,7 +49,7 @@ printCars = data => {
         let { brand, model, transmission } = data[car]
 
         let carCard = ` 
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-6">
             <div class="card">
                 <div class="card-body">
                     <p class="card-text">${brand}</p>
@@ -100,3 +100,20 @@ carsRef.on('value', snapshot => {
     console.log( snapshot.val() )
     printCars( snapshot.val() )
 })
+
+const saveCar = () => {
+    let carObject = {
+        transmission:"standard"
+    }
+    $("#car-form input").each( function(){
+        let property = this.name
+        let value = this.value 
+        carObject[property] = value 
+    })
+
+    console.log( carObject )
+    carsRef.push( carObject )
+}
+
+
+$("#save-car").click( saveCar )
